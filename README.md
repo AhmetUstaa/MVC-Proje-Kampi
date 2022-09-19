@@ -21,7 +21,7 @@
 > * **Index** metodu genellikle listeleme işlemi için kullanılır. Veriler listelenirken index isminde bir metod ile listeleniyor.
 > * **About** metodu uygulama ile ilgili bilgileri için kullanılan metottur.
 > * **Contact** metodu iletişim bilgileri için kullanılan metottur.
-> Tanımlanan metodların tamamının view tarafında mutlaka bir karşılığı olmalıdır.
+> * Tanımlanan metodların tamamının view tarafında mutlaka bir karşılığı olmalıdır.
 
 
 
