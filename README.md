@@ -9,3 +9,15 @@
 # Eğitim Notları
 
 * Proje türü ASP.Net Web Application (.Net Framework) - Visual C#
+* Projenin ismininde olduğu katmana **user interface** ya da **presentation layer** denir.
+
+> MVC 3 temel yapıdan oluşuyor;
+  * Model
+  * View
+  * Controller
+
+**Model** veri tabanına ait **entity** denilen kavramların tanımlandığı kısımdır. 
+**View** işin tasarım Front End kısmının yapıldığı alandır.
+**Controller** işin Backend kısmının yapıldığı alandır.
+
+
