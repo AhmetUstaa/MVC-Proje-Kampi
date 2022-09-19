@@ -21,7 +21,10 @@
 > * **Index** metodu genellikle listeleme işlemi için kullanılır. Veriler listelenirken index isminde bir metod ile listeleniyor.
 > * **About** metodu uygulama ile ilgili bilgileri için kullanılan metottur.
 > * **Contact** metodu iletişim bilgileri için kullanılan metottur.
-> * Tanımlanan metodların tamamının View tarafında mutlaka bir karşılığı olmalıdır.
+> * Tanımlanan metodların tamamının Views tarafında mutlaka bir karşılığı olmalıdır.
+
+> Controllers altında tanımlı veya tarafımızca tanımlanacak olan metodların Views > Home altında ayrı ayrı karşıklarının tanımlı olması gerekir. 
+> * Örneğin About.cshtml olana tıkladığımızda karşımıza gelen sayfa işin HTML yani Front End tarafının yazıldığı kısımdır.
 
 
 
