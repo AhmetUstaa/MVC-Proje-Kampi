@@ -12,12 +12,17 @@
 * Projenin ismininde olduğu katmana **user interface** ya da **presentation layer** denir.
 
 > MVC 3 temel yapıdan oluşuyor;
-  * Model
-  * View
-  * Controller
+> * **Model** veri tabanına ait **entity** denilen kavramların tanımlandığı kısımdır.
+> * **View** işin tasarım Front End kısmının yapıldığı alandır.
+> * **Controller** işin Backend kısmının yapıldığı alandır. (HomeController.cs)
 
-**Model** veri tabanına ait **entity** denilen kavramların tanımlandığı kısımdır. 
-**View** işin tasarım Front End kısmının yapıldığı alandır.
-**Controller** işin Backend kısmının yapıldığı alandır.
+> Bir yapının metod olduğunu sonunda parantez açılıp kapandığından anlayabilir.
+> Örneğin; Index(), About(), Contact()
+> * **Index** metodu genellikle listeleme işlemi için kullanılır. Veriler listelenirken index isminde bir metod ile listeleniyor.
+> * **About** metodu uygulama ile ilgili bilgileri için kullanılan metottur.
+> * **Contact** metodu iletişim bilgileri için kullanılan metottur.
+> Tanımlanan metodların tamamının view tarafında mutlaka bir karşılığı olmalıdır.
+
+
 
 
