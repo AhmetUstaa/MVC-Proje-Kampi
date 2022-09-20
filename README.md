@@ -64,7 +64,7 @@
 
 > Durum aktif ya da pasif olma işlemi için *public bool CategoryStatus { get; set; }* kullanılabilir. Silmek yerine pasif yapma tercih edilmesinin sebebi silindiği zaman farklı kategorilerde bulunan verilerde silinir. Pasif yapıldığında ise sayfada kullanıcı göremeyecektir. Ekstra olarak bu durum ileride içerik modify edilip tekrar aktif hale getirilip kullanılabilir.
 
-> Code First ----> Veritabanı ile Programlama dili arasında bağ kuran bir tekniktir. Projenizde veritabanı işlemlerinizi mümkün mertebe Visual Studio tarafında kod yazarak gerçekleştirmenizi sağlayan bir yaklaşımdır. Bu yaklaşım sayesinde veritabanı arayüzü ile yazılımcı arasında ilişki minimize edilmektedir.
+> **Code First** ----> Veritabanı ile Programlama dili arasında bağ kuran bir tekniktir. Projenizde veritabanı işlemlerinizi mümkün mertebe Visual Studio tarafında kod yazarak gerçekleştirmenizi sağlayan bir yaklaşımdır. Bu yaklaşım sayesinde veritabanı arayüzü ile yazılımcı arasında ilişki minimize edilmektedir.
 
 > Resimler dosya yolu şeklinde tutulur. Resimler sunucuya yüklenmez ayrı bir yere yüklenir ve dosya yolları veri tabanına çekilir.
 
