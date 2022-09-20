@@ -49,10 +49,25 @@
 
 > Browser sekmesinde mevcut görüntülenen isim HTML kodun içerisindeki title kısmında saklanıyor. Değişiklik oradan yapılabilir.
 
+> n katmanlı mimarı katmanları;
+> * 1- **Entity Layer** - Projenin SQL tarafındaki tabloların ve bu tabloların içerisinde yer alacak sütunların tanımlanacağı ve bunların C# tarafındaki adı property ve class olarak karşımıza gelecek olan yapıyı tutacak kısımdır. Başlıklar Entity sinin içinde yer olan propertyler örneğin; başlık id, başlık isim, başlık tarihi, başlık yazar. Burada Başlıklar bir tablo ve örnek verilenler ise sütunlar olacak. Tabloların ismi C# tarafında sınıf, sütünlar ise property olarak adlandırılacaktır.. 
+> * 2- **Data Access Layer** - *Crud* -Create, Read, Update, Delete- işlemlerinin temeli bu katmanda tanımlanır.
+> * 3- **Business Layer** - Business Layer E Ticaret sitesi üzerinden örnek verecek olursak sunum katmanına veriler çıkmadan önce bu verilerle ilgili olarak ürün adı maksimum 20 karakter olsun, ürün ekleme, çıkarma veya değişiklik yapma işlerini şu kişi yapabilsin vb. işlerin yapıldığı katmandır.
+> * 4- **Presentation Layer** - UI - User Interface
+> * Bu katmanlar Solution + Proje adı kısmına gelip add dedikten sonra Class Library (.Net Framework) seçilerek eklenir. İsimlendirme ilk harfler büyük ve birleşik olmasına dikkat edin.
+ 
+> n katmanlı mimaride üzerinde somut olarak tutulan ifadeler *Concrete* klasörü - bu klasörü entity katmanında oluşturduk - üzerinde tutulurlar. Soyut ifadeler ise *Abstract* klasörü içerisinde tutulur.
+
+> Oluşturmuş olduğumuz sınıfa diğer alanlardan yani diğer katmanlardan diğer sınıflardan vb. erişim sağlayabilmek için *class Heading* kodunun başına *Access Modify* denilen erişim belirleyici tür olarak **public** yazılmalıdır.
+
+> Classlarda bulundukları alanlara göre propertyler verilir. Heading ID, Heading Name vb.
 
 
 
 
+
+
+ 
 
 
 
