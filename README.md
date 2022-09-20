@@ -47,6 +47,8 @@
 > * Örneğin div lerin arasına getir diyebiliriz. Bunu RenderBody metoduyla razer syntax ı ile yapabiliriz. Yani HTML tarafında C# komutları girebiliriz. Bunu ise komutların başına @ sembolü ekleriz. 
 > * Front End tarafında yapılan değişiklikler sayfa yenileyerek gözlemlenebilirken, Backend kısmında bu durum söz konusu değildir.
 
+> Browser sekmesinde mevcut görüntülenen isim HTML kodun içerisindeki title kısmında saklanıyor. Değişiklik oradan yapılabilir.
+
 
 
 
