@@ -68,7 +68,20 @@
 
 > Resimler dosya yolu şeklinde tutulur. Resimler sunucuya yüklenmez ayrı bir yere yüklenir ve dosya yolları veri tabanına çekilir.
 
-
+> İlişkilendirme yöntemini açıklamak için örnek olarak;
+> * Category, Heading, Content ve Writer Tablolarımız olsun ve ilişkilendirmeler de şu şekilde olsun. 
+>     * Category ve Heading tablosu arasında bir ilişkimiz olsun ve bu ilişkiyi şöyle düşünebiliriz. Heading, Category tablosunun bir alt başlığı gibi. Bire çok ilişki.
+>         * Category sınıfına gelip **property** tanımlayacağız. *public ICollection <Heading> Headings { get; set; }* 
+>         * Heading sınıfına gelip iki tane daha **property** daha tanımlanır. *public int CategoryID { get; set; } ve public virtual Category Category { get; set; }*
+> * Heading ve Content tablosu arasında bir ilişkimiz olsun. 
+>     * Aynı mantıkla;
+>         * Heading sınıfına gelip *public ICollection <Content> Contents { get; set; }*
+>         * Content sınıfına gelip *public int HeadingID { get; set; }* ve *public virtual Heading Heading { get; set; }*
+> * Writer ve Heading tablosu arasında bir ilişkimiz olsun. 
+>     * Aynı mantıkla;
+>         * Writer sınıfına gelip *public ICollection <Heading> Headings { get; set; }* ve *public ICollection<Content> Contents { get; set; }
+>         * Heading sınıfına gelip *public int WriterID { get; set; }* ve *public virtual Writer Writer { get; set; }*
+>         * Content sınıfına gelip *public int WriterID { get; set; }* ve *public virtual Writer Writer { get; set; }*
 
 
 
