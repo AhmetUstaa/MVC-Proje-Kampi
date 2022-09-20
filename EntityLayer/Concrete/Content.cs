@@ -8,11 +8,16 @@ namespace EntityLayer.Concrete
 {
     public class Content
     {
-        public int Content { get; set; }
+        public int ContentID { get; set; }
         public string ContentValue { get; set; }
-        public  DateTime ContentDate { get; set; }
-        //ContentWriter
-        //ContentHeader
+        public DateTime ContentDate { get; set; }
+        public int HeadingID { get; set; }
+        public virtual Heading Heading { get; set; }
+        public int WriterID { get; set; }
+        public virtual Writer Writer { get; set; }
+
+
+
 
 
     }
