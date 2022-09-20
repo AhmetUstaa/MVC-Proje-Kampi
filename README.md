@@ -37,6 +37,10 @@
 
 > Bir metot tanımlanıp Views kısmında bir Layout a bağlandıktan sonra görüntülemek için mevcut sayfanın yenilenmesi yetmez, değişiklikler yapıldıktan sonra derlemek gerekir. Sağ tıklayıp view in browser seçilmelidir.
 
+> SOLID prensipleri gereği, projede yapılacak her bir menü alanı bir controllerda tutulacaktır. Başlıklar, kullanıcılar, yazılar, admin vb.
+
+> Bir controller tanımlandığında bize otomatik olarak sunulan Index metodunu bir View oluşturmak için kullanırız. Öncesinde ise bir Layout tanımlanır.
+
 
 
 
