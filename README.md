@@ -31,6 +31,24 @@
 > **br** ifadesi bir boşluk bırakır.
 > **h6** yüksekliği temsil ediyor. h1 en yüksek, h6 ise en düşüktür.
 
+> Metot tanımlamaların türleri vardır. 
+> * Örneğin **ActionResult** gibi. String, integer vb. gibi veri tipleri tanımlanabilir. Metot yayınlama türü olarak *public* yani herkese açık bir örneğidir.
+
+> Her metot bir sayfa döndürür. Bu sebeple controllers üzerinde tanımlanan metoda sağ tıklayıp **Add View** diyerek *Views* yapısı üzerinde bir sayfaya attach edilir. Bu işlem sırasında sayfasımızı bir Layout a bağlı olarak çalıştırmak istediğimizde çıkan pencerede ... ya basılır ve Views > Shared a gidilir. 
+
+> Bir metot tanımlanıp Views kısmında bir Layout a bağlandıktan sonra görüntülemek için mevcut sayfanın yenilenmesi yetmez, değişiklikler yapıldıktan sonra derlemek gerekir. Sağ tıklayıp view in browser seçilmelidir. 
+
+> SOLID prensipleri gereği, projede yapılacak her bir menü alanı bir controllerda tutulacaktır. Başlıklar, kullanıcılar, yazılar, admin vb.
+
+> Bir controller tanımlandığında bize otomatik olarak sunulan Index metodunu bir View oluşturmak için kullanırız. Öncesinde ise bir Layout tanımlanır. 
+> Views > Shared altında bir view tanımladığımızda herhangi bir layout u kullanmazsa kendisi bir layout olur. Bu sayfayı sağ tık ile browserda açamayız. Bunun için bir controllerda tanımlı olması gerekir.
+
+> **RenderBody çağırılmadı hatası** oluşturmuş olduğumuz layout un içerisine sayfaları yüklerken ben bu sayfaları layout un hangi kısmına getireceğim sorusunun cevabını vermediğimiz için bu hatayı alırız. 
+> * Örneğin div lerin arasına getir diyebiliriz. Bunu RenderBody metoduyla razer syntax ı ile yapabiliriz. Yani HTML tarafında C# komutları girebiliriz. Bunu ise komutların başına @ sembolü ekleriz. 
+> * Front End tarafında yapılan değişiklikler sayfa yenileyerek gözlemlenebilirken, Backend kısmında bu durum söz konusu değildir.
+
+> Browser sekmesinde mevcut görüntülenen isim HTML kodun içerisindeki title kısmında saklanıyor. Değişiklik oradan yapılabilir.
+
 
 
 
