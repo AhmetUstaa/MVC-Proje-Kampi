@@ -82,6 +82,9 @@
 >         * Writer sınıfına gelip *public ICollection <Heading> Headings { get; set; }* ve *public ICollection<Content> Contents { get; set; }
 >         * Heading sınıfına gelip *public int WriterID { get; set; }* ve *public virtual Writer Writer { get; set; }*
 >         * Content sınıfına gelip *public int WriterID { get; set; }* ve *public virtual Writer Writer { get; set; }*
+> * Kod yapısı şu şekildedir. *public* - tüm sınıflardan erişim mevcut - *ICollection* - ben ilişki kuracağım - <*Hangi sınıfla ilişki kuracağım*> *Property adı* -İlişki kurulacak sınıfın adının sonuna 's takısı getirilerek kullanılır - { get; set; }
+> * Bir diğer ilişkilendirme kod yapısı da şu şekildedir. *public* *int* *Property adı* - Bu ad ilişki kurulan sınıfın ilişki kurduğu sınıfın id adı olmalıdır. - 
+>      * Örneğin; CategoryID 
 
 
 
