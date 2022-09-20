@@ -86,6 +86,8 @@
 > * Bir diğer ilişkilendirme kod yapısı da şu şekildedir. *public* *int* *Property adı* - Bu ad ilişki kurulan sınıfın ilişki kurduğu sınıfın id adı olmalıdır. - 
 >      * Örneğin; CategoryID 
 > * Bir diğer ilişkilendirme kod yapısı şu şekildedir. *public* *virtual* - bir başka sınıftan değer alacağım demektir. - *Sınıf adı* - hangi sınıftan değer alacağım demektir. - *Propery adı* - sınıfın adı yazılır. -
+ 
+ > *   
 
 
 
