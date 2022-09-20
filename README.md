@@ -85,6 +85,7 @@
 > * Kod yapısı şu şekildedir. *public* - tüm sınıflardan erişim mevcut - *ICollection* - ben ilişki kuracağım - <*Hangi sınıfla ilişki kuracağım*> *Property adı* -İlişki kurulacak sınıfın adının sonuna 's takısı getirilerek kullanılır - { get; set; }
 > * Bir diğer ilişkilendirme kod yapısı da şu şekildedir. *public* *int* *Property adı* - Bu ad ilişki kurulan sınıfın ilişki kurduğu sınıfın id adı olmalıdır. - 
 >      * Örneğin; CategoryID 
+> * Bir diğer ilişkilendirme kod yapısı şu şekildedir. *public* *virtual* - bir başka sınıftan değer alacağım demektir. - *Sınıf adı* - hangi sınıftan değer alacağım demektir. - *Propery adı* - sınıfın adı yazılır. -
 
 
 
