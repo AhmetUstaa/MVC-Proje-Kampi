@@ -32,7 +32,8 @@
 > **h6** yüksekliği temsil ediyor. h1 en yüksek, h6 ise en düşüktür.
 
 > Metot tanımlamaların türleri vardır. Örneğin **ActionResult** gibi. String, integer vb. gibi veri tipleri tanımlanabilir. Metot yayınlama türü olarak *public* yani herkese açık bir örneğidir.
-> Her metot bir sayfa döndürür. Bu sebeple controllers üzerinde tanımlanan metoda sağ tıklayıp **Add View** diyerek *Views* yapısı üzerinde bir sayfaya attach edilir.
+
+> Her metot bir sayfa döndürür. Bu sebeple controllers üzerinde tanımlanan metoda sağ tıklayıp **Add View** diyerek *Views* yapısı üzerinde bir sayfaya attach edilir. Bu işlem sırasında sayfasımızı bir Layout a bağlı olarak çalıştırmak istediğimizde çıkan pencerede ... ya basılır ve Views > Shared a gidilir. 
 
 
 
