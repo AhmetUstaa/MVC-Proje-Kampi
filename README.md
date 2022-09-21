@@ -90,6 +90,11 @@
  > * Oluşturulan sınıflara öncelikle veritabanı entegrasyonu için key(sınıf id leri için) ve sonrasında kullanım kısıtlamaları için - kısıtlama yapılmazsa örneğin kullanıcı adı 20 karakterden oluşur gibi veritabanımızda büyük alanlar kullanılabilir - *attribute* ler kullanırız. 
 >      * Örneğin; [Key] - Kullanmak için entity layer a gelip sağ tık nuget yaptıktan sonra entity framework yüklenmelidir. - , [StringLength(200)]
 > * Attribute tanımlamaları property lerin üzerinde yapılır.
+ 
+> * Context sınıfı veri tabanına tabloların yansıtılmasında kullanılan sınıftır. Data Access Layer katmanında tanımlanır. Concrete klasörü oluşturulur ve Context class ı eklenir. Entity framework paketi kurulur.
+> * Context sınıfında tanımlanan property ler SQL database inde birer tablo ismi olarak karşılık bulur.
+> * Context sınıfında *public class Context: DbContext* revizyonunu yaparak DbContext sınıfındaki özellikler Context sınıfına eklensin diyoruz.
+> * **:** C# dilinde başka bir class ya da bir lokasyondan kalıtsal yolla veri almak anlamına geliyor. 
 
 
 
