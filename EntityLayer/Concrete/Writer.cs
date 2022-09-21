@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,11 +9,17 @@ namespace EntityLayer.Concrete
 {
     public class Writer
     {
+        [Key]
         public int WriterID { get; set; }
+        [StringLength(50)]
         public int WriterName { get; set; }
+        [StringLength(50)]
         public int WriterSurName { get; set; }
+        [StringLength(100)]
         public int WriterImage { get; set; }
+        [StringLength(50)]
         public int WriterMail { get; set; }
+        [StringLength(20)]
         public int WriterPassword { get; set; }
 
         public ICollection<Heading> Headings { get; set; }
