@@ -97,6 +97,22 @@
 > * **:** C# dilinde başka bir class ya da bir lokasyondan kalıtsal yolla veri almak anlamına geliyor. 
 > * Bir Layer diğer Layer ın class larını, metotlarını vb. kullanmak istiyorsa kullanmak istediği katmanı referans olarak göstermelidir. İlgili katman yani kullanmak isteyen katmanda *Reference* kısmına gelinir ve add reference> project tıklanır ve hangi katmandan veri akışı isteniyorsa o katmak seçilerek eklenir.
 
+> * public DbSet<About> Abouts daki *Abouts* ifadesi SQL de ki tablonun ismi olacaktır.
+ 
+> * Sunum katmanında **Web.config** dosyası;
+>    * Projelerin veritabanı bağlantı adresi tanımlaması burada yapılıyor.
+>    * Projelerin 404 sayfaları ile ilgili ayarlar burada yapılıyor.
+>    * Oturum ve yetkilendirme ayarları burada gerçekleştiriliyor.
+> * Web.config *bağlantı ayarları* yapılırken;
+>    * </system.web> yazan kısmın altına gelinir.
+>    * Bağlantı string i oluşturulur.
+>    * <connectionStrings>
+	       	<add name="Context" connectionString="data source=IAMNOTHIN; initial catalog=DbMvcKamp; integrated security=true;" 
+			               providerName="System.Data.SqlClient"/>
+     	</connectionStrings>
+> * add name --------> Tabloların, veritabanına yansıtılacağı sınıfın ismiyle aynı olmak zorundadır.
+> * data source -----> Local SQL sunucusunun server name i.
+> * initial catalog -> Veritabanının isminin tutulacağı kısımdır.
 
 
  
