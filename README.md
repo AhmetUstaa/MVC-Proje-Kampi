@@ -87,7 +87,9 @@
 >      * Örneğin; CategoryID 
 > * Bir diğer ilişkilendirme kod yapısı şu şekildedir. *public* *virtual* - bir başka sınıftan değer alacağım demektir. - *Sınıf adı* - hangi sınıftan değer alacağım demektir. - *Propery adı* - sınıfın adı yazılır. -
  
- > *   
+ > * Oluşturulan sınıflara öncelikle veritabanı entegrasyonu için key(sınıf id leri için) ve sonrasında kullanım kısıtlamaları için - kısıtlama yapılmazsa örneğin kullanıcı adı 20 karakterden oluşur gibi veritabanımızda büyük alanlar kullanılabilir - *attribute* ler kullanırız. 
+>      * Örneğin; [Key] - Kullanmak için entity layer a gelip sağ tık nuget yaptıktan sonra entity framework yüklenmelidir. - , [StringLength(200)]
+> * Attribute tanımlamaları property lerin üzerinde yapılır.
 
 
 
