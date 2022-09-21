@@ -82,7 +82,37 @@
 >         * Writer sınıfına gelip *public ICollection <Heading> Headings { get; set; }* ve *public ICollection<Content> Contents { get; set; }
 >         * Heading sınıfına gelip *public int WriterID { get; set; }* ve *public virtual Writer Writer { get; set; }*
 >         * Content sınıfına gelip *public int WriterID { get; set; }* ve *public virtual Writer Writer { get; set; }*
+> * Kod yapısı şu şekildedir. *public* - tüm sınıflardan erişim mevcut - *ICollection* - ben ilişki kuracağım - <*Hangi sınıfla ilişki kuracağım*> *Property adı* -İlişki kurulacak sınıfın adının sonuna 's takısı getirilerek kullanılır - { get; set; }
+> * Bir diğer ilişkilendirme kod yapısı da şu şekildedir. *public* *int* *Property adı* - Bu ad ilişki kurulan sınıfın ilişki kurduğu sınıfın id adı olmalıdır. - 
+>      * Örneğin; CategoryID 
+> * Bir diğer ilişkilendirme kod yapısı şu şekildedir. *public* *virtual* - bir başka sınıftan değer alacağım demektir. - *Sınıf adı* - hangi sınıftan değer alacağım demektir. - *Propery adı* - sınıfın adı yazılır. -
+ 
+ > * Oluşturulan sınıflara öncelikle veritabanı entegrasyonu için key(sınıf id leri için) ve sonrasında kullanım kısıtlamaları için - kısıtlama yapılmazsa örneğin kullanıcı adı 20 karakterden oluşur gibi veritabanımızda büyük alanlar kullanılabilir - *attribute* ler kullanırız. 
+>      * Örneğin; [Key] - Kullanmak için entity layer a gelip sağ tık nuget yaptıktan sonra entity framework yüklenmelidir. - , [StringLength(200)]
+> * Attribute tanımlamaları property lerin üzerinde yapılır.
+ 
+> * Context sınıfı veri tabanına tabloların yansıtılmasında kullanılan sınıftır. Data Access Layer katmanında tanımlanır. Concrete klasörü oluşturulur ve Context class ı eklenir. Entity framework paketi kurulur.
+> * Context sınıfında tanımlanan property ler SQL database inde birer tablo ismi olarak karşılık bulur.
+> * Context sınıfında *public class Context: DbContext* revizyonunu yaparak DbContext sınıfındaki özellikler Context sınıfına eklensin diyoruz.
+> * **:** C# dilinde başka bir class ya da bir lokasyondan kalıtsal yolla veri almak anlamına geliyor. 
+> * Bir Layer diğer Layer ın class larını, metotlarını vb. kullanmak istiyorsa kullanmak istediği katmanı referans olarak göstermelidir. İlgili katman yani kullanmak isteyen katmanda *Reference* kısmına gelinir ve add reference> project tıklanır ve hangi katmandan veri akışı isteniyorsa o katmak seçilerek eklenir.
 
+> * public DbSet<About> Abouts daki *Abouts* ifadesi SQL de ki tablonun ismi olacaktır.
+ 
+> * Sunum katmanında **Web.config** dosyası;
+>    * Projelerin veritabanı bağlantı adresi tanımlaması burada yapılıyor.
+>    * Projelerin 404 sayfaları ile ilgili ayarlar burada yapılıyor.
+>    * Oturum ve yetkilendirme ayarları burada gerçekleştiriliyor.
+> * Web.config *bağlantı ayarları* yapılırken;
+>    * </system.web> yazan kısmın altına gelinir.
+>    * Bağlantı string i oluşturulur.
+>    * <connectionStrings>
+	       	<add name="Context" connectionString="data source=IAMNOTHIN; initial catalog=DbMvcKamp; integrated security=true;" 
+			               providerName="System.Data.SqlClient"/>
+     	</connectionStrings>
+> * add name --------> Tabloların, veritabanına yansıtılacağı sınıfın ismiyle aynı olmak zorundadır.
+> * data source -----> Local SQL sunucusunun server name i.
+> * initial catalog -> Veritabanının isminin tutulacağı kısımdır.
 
 
  
