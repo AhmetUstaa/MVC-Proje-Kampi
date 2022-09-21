@@ -95,6 +95,7 @@
 > * Context sınıfında tanımlanan property ler SQL database inde birer tablo ismi olarak karşılık bulur.
 > * Context sınıfında *public class Context: DbContext* revizyonunu yaparak DbContext sınıfındaki özellikler Context sınıfına eklensin diyoruz.
 > * **:** C# dilinde başka bir class ya da bir lokasyondan kalıtsal yolla veri almak anlamına geliyor. 
+> * Bir Layer diğer Layer ın class larını, metotlarını vb. kullanmak istiyorsa kullanmak istediği katmanı referans olarak göstermelidir. İlgili katman yani kullanmak isteyen katmanda *Reference* kısmına gelinir ve add reference> project tıklanır ve hangi katmandan veri akışı isteniyorsa o katmak seçilerek eklenir.
 
 
 
