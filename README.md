@@ -115,6 +115,12 @@
 > * data source -----> Local SQL sunucusunun server name i.
 > * initial catalog -> Veritabanının isminin tutulacağı kısımdır.
 
+> * Migration Code First yardımıyla oluşturmuş olduğumuz mimarideki değişiklikleri SQL e yansıtması için kullanacağım bir bileşendir.
+> * Migration aktif etmek için View > Other > Package Manager Console açılır ve *default project* kısmından *DataAccessLayer* - Context sınıfının bağlı olduğu katman seçilmelidir yani class ve property leri veri tabanına yansıttığımız katman -  şeçilir ve komut satırına *enable-migrations* yazılır.
+> * Açılan pencerecede *AutomaticMigrationEnabled = true;* yapılmalıdır.
+> * Package Manager Console üzerinde *update-database* ile aktarım gerçekleştiririz.
+
+
 
  
 
