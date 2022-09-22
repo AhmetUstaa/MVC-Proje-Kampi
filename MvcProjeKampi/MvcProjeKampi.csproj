@@ -167,6 +167,8 @@
     <Content Include="Views\Shared\_Deneme.cshtml" />
     <Content Include="Views\Test\Index.cshtml" />
     <Content Include="Views\Test\Test2.cshtml" />
+    <Content Include="Views\Shared\Test3Layout.cshtml" />
+    <Content Include="Views\Test\Test3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
