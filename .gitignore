@@ -3,7 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-static/* linguist-vendored
+*static/* linguist-vendored
+#static/* linguist-vendored
 
 # User-specific files
 *.rsuser
