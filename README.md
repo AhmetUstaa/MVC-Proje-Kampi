@@ -1,4 +1,4 @@
-# ASP.Net Mvc Proje Kampı
+# Mvc Proje Kampı
 
 > Eğitmen --------------> https://www.linkedin.com/in/murat-y%C3%BCceda%C4%9F-186933149/
 
