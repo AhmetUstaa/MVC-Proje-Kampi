@@ -2,8 +2,7 @@
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
 * text=auto
-*static/* linguist-vendored
-#static/* linguist-vendored
+
 static/* linguist-vendored
 
 ###############################################################################
@@ -65,6 +64,3 @@ static/* linguist-vendored
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
 
-$ cat .gitattributes
-special-vendored-path/* linguist-vendored
-jquery.js linguist-vendored=false
