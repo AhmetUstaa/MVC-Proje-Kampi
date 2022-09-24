@@ -1,4 +1,4 @@
-# MvcProjeKampi
+# Mvc Proje Kampı
 
 > Eğitmen --------------> https://www.linkedin.com/in/murat-y%C3%BCceda%C4%9F-186933149/
 
@@ -114,6 +114,16 @@
 > * add name --------> Tabloların, veritabanına yansıtılacağı sınıfın ismiyle aynı olmak zorundadır.
 > * data source -----> Local SQL sunucusunun server name i.
 > * initial catalog -> Veritabanının isminin tutulacağı kısımdır.
+
+> * Migration Code First yardımıyla oluşturmuş olduğumuz mimarideki değişiklikleri SQL e yansıtması için kullanacağım bir bileşendir.
+> * Migration aktif etmek için View > Other > Package Manager Console açılır ve *default project* kısmından *DataAccessLayer* - Context sınıfının bağlı olduğu katman seçilmelidir yani class ve property leri veri tabanına yansıttığımız katman -  şeçilir ve komut satırına *enable-migrations* yazılır.
+> * Açılan pencerecede *AutomaticMigrationEnabled = **true**;* yapılmalıdır.
+> * Package Manager Console üzerinde *update-database* ile aktarım gerçekleştiririz.
+> * Migration, C# ile SQL arasında köprü vazifesi görür ve log tutar. 
+
+> * SQL Category Status 1 aktif, 0 pasif anlamındadır. SQL de status kısmı C# ın aksine byte olarak tutulur. C# da ise bool dur.
+
+
 
 
  
