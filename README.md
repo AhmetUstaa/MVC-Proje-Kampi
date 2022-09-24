@@ -139,7 +139,15 @@
 	
 > * Ekleme işlemi için void kullanılır. Yani geriye değer döndürmeyen bir ifadedir.
 	
-> * İnterface te tanımlanan CRUD operasyon metodlarının görevlerini class oluşturup yazarız.
+> * Interface te tanımlanan CRUD operasyon metodlarının görevlerini class oluşturup yazarız. Bu class ları da **Concrete** klasörü içerisinde *Repositories* klasörü oluşturup içine atarız. 
+
+> * return _object.ToList(); ----> Entity Framework te verileri listelemek için kullanılan metottur. Diğer metotlar şöyledir. ToList, Add, Removo, Find.
+
+> * ExecuteNonQuery() ado nette, SaveChanges() entity frameworkte değişiklikleri veritabanına yansıtmak için kullanılır.
+
+> * List<T> List(Expression<Func<T, bool>> filter) ----> şartlı listeleme yapar. İsmi Ahmet olanları getir gibi.
+  
+
 	
 
 	
