@@ -123,6 +123,43 @@
 
 > * SQL Category Status 1 aktif, 0 pasif anlamındadır. SQL de status kısmı C# ın aksine byte olarak tutulur. C# da ise bool dur.
 
+> * SQL veri girişleri en az ilişkili olandan başlayacak şekilde yapılır. Bu projede Category, Writer, Heading ve son olarakta Content olacak şekilde yapıldı.
+	
+> CRUD işlemleri interfaceler üzerinden gerçekleştirilir. Interfaceler sınıflara rehberlik eden yapılardır. Interfaceler üzerinde metodlar oluşturulur. 
+> CRUD operasyonları interfacelerin içerisine metod olarak tanımlanır.
+	
+	----------------------
+
+# Ödev 1 ---> DRY prensibi nedir?
+
+> * DRY (Don’t Repeat Yourself), yazılım kalıplarının tekrarlanmasını (code duplication) ve buna bağlı olarak ortaya çıkabilecek fazlalıkların ve karmaşanın önlenmesini amaçlayan bir yazılım geliştirme ilkesidir. DRY prensibi, "Her bilginin bir sistem içinde tek, kesin ve yetkili bir temsili ile var olması" gerektiğini vurgular.
+> * DRY Prensibinin Avantajları;
+>	* Sürdürülebilirlik ( Maintainability), DRY ile öne çıkan en önemli fayda tekrarlanan kodlar sebebiyle söz konusu olabilecek çakışmalar, aksamalar ve hataların önüne geçebilmesidir. Bu sayada, ilişlili bir logic işlemde ortaya çıkabilecek bir gelişme ihtiyacı veya sorun kolaylıkla tek bir alan üzerinde çözülür.
+>	* Okunaklılık (Readability), DRY prensibi ile yazılan kod çok daha kolay okunur, analiz edilir ve anlaşılırdır. 
+>	* Tekrar kullanılabilirlik (Reuse), DRY vurguladığı bakış açısı gereği, kod tekrarı yerine kodun tekrar kullanımını teşvik eder. Yeniden kullanılabilir kod, geliştirme süresini hızlandırdığı için maliyet avantajı sağlar.
+>	* Test edilebilirlik (Testing), ne kadar çok işlem söz konusu ise o kadar fazla test kodu yazılması gerekir. Eğer, kod tekrarı söz konusu değilse bu daha az test işlemi demektir. Dolasıyla DRY sayesinde daha etkin ve pratik test süreçleri (unit testing ve integration testing) söz konusu olacaktır.
+	
+	--------------------
+
+> * Soyut ifadelerin çalışılmasıyla ilgili Data Access Layer da Abstract isimli bir klasör oluşturulur. 
+> * Abstract klasörüne interfaceler oluşturarak çalışmalar yapılır.
+	
+> * Interfaceler adlandırılırken başına interface in I büyük olacak şekilde koyulur ve bir sonraki harfte büyük ve diğerleri küçük olacak şekilde yapılır. 
+>	* Örneğin; ICategoryDal
+>	* I ------------> Interface
+>	* Category -----> Entity nin ismi
+>	* Dal ----------> Data Access Layer yani katman adının kısaltıması.
+	
+> * Ekleme işlemi için void kullanılır. Yani geriye değer döndürmeyen bir ifadedir.
+	
+> * İnterface te tanımlanan CRUD operasyon metodlarının görevlerini class oluşturup yazarız.
+	
+
+	
+
+
+	
+
 
 
 
