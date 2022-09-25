@@ -180,6 +180,25 @@
 >	* CategoryManager sınıfını çağırırız. CategoryManager cm = new CategoryManager();
 > 	* Eklemiş olduğumuz return değerine bir view eklenir.
 >	* Presentation Layer a Entity Framework yüklenir.
+	
+	
+> * SQL den verileri çekerken foreach döngüsü kullanabiliriz.
+>	* Bunun için öncelikle 2 komut tanımlanmalıdır.
+>		* @using EntityLayer.Concrete ----> HTML sayfasına Concrete dizini dahil olur.
+>		* @model List<Category> ----------> Verileri listelemek için kullanılacak olan bileşene model denir. Liste olarak kategori değerlerini tutacak.
+> 	* Son olarakta foreach döngüsünü yazarız.
+	
+> * **Razor Syntax** ---> HTML içerisinde C# komutlarını yazabilmek için kullanılan yöntemdir. Başına @ ifadesi yazarak kullanırız.
+
+> * Foreach döngüsünün 4 tane parametresi vardır.
+> 	* Değişkenin türü. var
+>	* Değişkenin verilen isim. item
+> 	* in komutu. in
+>	* Değerlerin alınacağı dizinin ismi. Model
+>		* @foreach(var item in Model) 
+	
+
+
 
 
 
