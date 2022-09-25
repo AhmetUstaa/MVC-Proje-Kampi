@@ -154,6 +154,22 @@
 
 > * return _object.Where(filter).ToList(); ----> where ifadesi entity framework ün parametresidir.
 
+> * Business Layer da geçerliliğinin ve kuralların kontrolü yapılır. 
+> 	* Örneğin; CategoryName için vermiş olduğumuz StringLength değerinin geçerli olup olmadığı gibi.
+	
+> * Entity Layer ----------> Bu katmanda herhangi bir katman kullanılmıyor.
+> * Data Access Layer -----> Entity katmanı kullanılıyor.
+> * Business Layer --------> Entity ve Data Access Layers kullanılıyor.
+> * Presentation Layer ----> Entity, Data Access ve Business Layers kullanılıyor.
+	
+> * <tr> ---> Table Row
+> * <td> ---> Table Data
+> * <th> ---> Table Head
+> * td ile th arasındaki fark th head yani başlık olduğu için kalın puntoyla yazılıyor, td data olduğu için normal puntoyla yazılıyor.
+	
+
+
+
 
 
 
