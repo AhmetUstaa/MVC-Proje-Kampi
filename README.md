@@ -196,7 +196,8 @@
 > 	* in komutu. in
 >	* Değerlerin alınacağı dizinin ismi. Model
 >		* @foreach(var item in Model) 
-	
+
+> * **Break Point** işlemi için istenilen satır numarası arkasına tıklanır ve işaretçi çıkarılır. Start butonu ile çalıştırılır. F11 butonu ile diğer adıma geçilir.
 
 
 
