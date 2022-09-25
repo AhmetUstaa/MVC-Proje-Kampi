@@ -172,7 +172,14 @@
 >	* **link href="~/Content/bootstrap.min.css" rel="stylesheet"**
 > * Buton tanımlama örneği ----> <button class="btn btn-info">Yeni kategori</button>
 >	* 2 buton varsa ve biri diğerinin altına gelsin istiyorsak br kullanılırız.
-
+	
+> * Verileri SQL serverdan çekerken;
+>	* Presentation Layer da reference lara business, data access ve entity layers eklenir.
+>	* CategoryController içerisine metodlar tanımlanır.
+>	* Metodlar içerisinde **var** türünde değişken oluşturulur. Sebebi ise farklı veri türlerinde veriler olabileceği için. var değişkeni hepsini kapsar.
+>	* CategoryManager sınıfını çağırırız. CategoryManager cm = new CategoryManager();
+> 	* Eklemiş olduğumuz return değerine bir view eklenir.
+>	* Presentation Layer a Entity Framework yüklenir.
 
 
 
