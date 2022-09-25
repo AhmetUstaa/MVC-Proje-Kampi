@@ -26,7 +26,7 @@
 	
 > * **Ekleme işleminde geçerli olmak üzere**, ekleme işlemi yaparken sayfa yüklendiğinde bir post işlemide gerçekleşiyor. Sayfa yüklenir yüklenmez controllerdaki ilgili komutlar devreye giriyor. ilgili tabloya eklenebilecek herhangi bir değer olmadığı için SQL de ilgili tabloya değerler NULL ve False olarak ekleniyor. Varsa return olarak tanımlı action ifadesine geri dönülüyor ve döngü sonlanıyor. **Böylelikle sayfa yüklenir yüklenmez ekleme yapma hatası ortaya çıkıyor**. Bu hatanın önüne geçmek için sayfada bir buton tanımlaması yapabilir ve butona tıklanınca bu işlemler gerçekleşecek şekilde ayarlanabilir. Burada **HTTP GET ve POST** attribute leri kullanabiliriz.
 > * İlgili kategoriye gelip ve ilgili actionresult ın üzerine gelerek *[HttpPost]* attribute unu ekleriz. Bu bize HTTP POST devreye girdiği zaman çalışacak bir Action özelliği kazandıracak. 
-> * Sayfa yüklendiği zaman çalışacak attribute ise *[HTTP GET]* attribute udür. Bunu ise post olanın üzerine tekrar aynı action result tanımlandıktan sonra return olarak sadece view metodu eklenerek yazılır. 
+> * Sayfa yüklendiği zaman çalışacak attribute ise *[HttpGet]* attribute udür. Bunu ise post olanın üzerine tekrar aynı action result tanımlandıktan sonra return olarak sadece view metodu eklenerek yazılır. 
 > * Böylelikle sayfa yüklendiği zaman ilgili action için get attribute ü devreye girecek ve kullanıcı eğer o sayfada bir butona tıklarsa o zamanda ilgili diğer action ile post attribute ü devreye girer. Son olarakta sayfa yüklenir yüklenmez veri kaydetme işlemi olmayacak. 
 
 > * form class diyip belirledikten sonra **method="post"** yazdığımızda şu demek oluyor form tag i içerisinde yazan ifadeler ne zaman çalışsın? Sayfada bir post işlemi olduğu zaman çalışsın.
