@@ -8,8 +8,9 @@
 
 # Eğitim Notları
 
-* Proje türü ASP.Net Web Application (.Net Framework) - Visual C#
-* Projenin ismininde olduğu katmana **user interface** ya da **presentation layer** denir.
+> * Proje türü ASP.Net Web Application (.Net Framework) - Visual C#
+
+> * Projenin ismininde olduğu katmana **user interface** ya da **presentation layer** denir.
 
 > MVC 3 temel yapıdan oluşuyor;
 > * **Model** veri tabanına ait **entity** denilen kavramların tanımlandığı kısımdır.
@@ -146,6 +147,16 @@
 > * ExecuteNonQuery() ado nette, SaveChanges() entity frameworkte değişiklikleri veritabanına yansıtmak için kullanılır.
 
 > * List<T> List(Expression<Func<T, bool>> filter) ----> şartlı listeleme yapar. İsmi Ahmet olanları getir gibi.
+
+> * Generic repository bütün bileşenlerin tamamını kapsar.
+
+> * ctor (çift tab) constructor, oluşturulan sınıfın ismiyle aynı isimde bir metottur. Bu tür metotlara constructor metot denir.
+
+> * return _object.Where(filter).ToList(); ----> where ifadesi entity framework ün parametresidir.
+
+
+
+
   
 
 	
