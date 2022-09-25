@@ -169,7 +169,6 @@
 
 > * HTML kod içerisine oluşturduğumuz tabloların görselleştirilmesi için table kısmına class eklenir. **Bootstrap**, HTML tarafında oluşturulan tablolara daha güçlü bir arayüz oluşturabilmek için kullanılan bir bileşendir. 
 > 	* Örneğin; <table class="table table-bordered"> daha kenarlıklı bir yapıya sahiptir. Başka alternatiflerde mevcuttur. Fakat bu bileşeni kullanabilmek için presentation katmanı içerisinde content klasöründeki **bootstrap.min.css** bileşenini sürükleyip HMTL sayfamızın içerisine eklemeliyiz. 
-> 	* link href="~/Content/bootstrap.min.css" rel="stylesheet"
 	
 > * Buton tanımlama örneği ----> button class="btn btn-info">Yeni kategori</button
 > 	* 2 buton varsa ve biri diğerinin altına gelsin istiyorsak *br* kullanılırız.
