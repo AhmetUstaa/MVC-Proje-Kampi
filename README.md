@@ -154,6 +154,54 @@
 
 > * return _object.Where(filter).ToList(); ----> where ifadesi entity framework ün parametresidir.
 
+> * Business Layer da geçerliliğinin ve kuralların kontrolü yapılır. 
+> 	* Örneğin; CategoryName için vermiş olduğumuz StringLength değerinin geçerli olup olmadığı gibi.
+	
+> * Entity Layer ----------> Bu katmanda herhangi bir katman kullanılmıyor.
+> * Data Access Layer -----> Entity katmanı kullanılıyor.
+> * Business Layer --------> Entity ve Data Access Layers kullanılıyor.
+> * Presentation Layer ----> Entity, Data Access ve Business Layers kullanılıyor.
+	
+> * <tr> ---> Table Row
+> * <td> ---> Table Data
+> * <th> ---> Table Head
+> * td ile th arasındaki fark th head yani başlık olduğu için kalın puntoyla yazılıyor, td data olduğu için normal puntoyla yazılıyor.
+
+> * HTML kod içerisine oluşturduğumuz tabloların görselleştirilmesi için table kısmına class eklenir. **Bootstrap**, HTML tarafında oluşturulan tablolara daha güçlü bir arayüz oluşturabilmek için kullanılan bir bileşendir. 
+> 	* Örneğin; <table class="table table-bordered"> daha kenarlıklı bir yapıya sahiptir. Başka alternatiflerde mevcuttur. Fakat bu bileşeni kullanabilmek için presentation katmanı içerisinde content klasöründeki **bootstrap.min.css** bileşenini sürükleyip HMTL sayfamızın içerisine eklemeliyiz. 
+>	* **link href="~/Content/bootstrap.min.css" rel="stylesheet"**
+> * Buton tanımlama örneği ----> <button class="btn btn-info">Yeni kategori</button>
+>	* 2 buton varsa ve biri diğerinin altına gelsin istiyorsak br kullanılırız.
+	
+> * Verileri SQL serverdan çekerken;
+>	* Presentation Layer da reference lara business, data access ve entity layers eklenir.
+>	* CategoryController içerisine metodlar tanımlanır.
+>	* Metodlar içerisinde **var** türünde değişken oluşturulur. Sebebi ise farklı veri türlerinde veriler olabileceği için. var değişkeni hepsini kapsar.
+>	* CategoryManager sınıfını çağırırız. CategoryManager cm = new CategoryManager();
+> 	* Eklemiş olduğumuz return değerine bir view eklenir.
+>	* Presentation Layer a Entity Framework yüklenir.
+	
+	
+> * SQL den verileri çekerken foreach döngüsü kullanabiliriz.
+>	* Bunun için öncelikle 2 komut tanımlanmalıdır.
+>		* @using EntityLayer.Concrete ----> HTML sayfasına Concrete dizini dahil olur.
+>		* @model List<Category> ----------> Verileri listelemek için kullanılacak olan bileşene model denir. Liste olarak kategori değerlerini tutacak.
+> 	* Son olarakta foreach döngüsünü yazarız.
+	
+> * **Razor Syntax** ---> HTML içerisinde C# komutlarını yazabilmek için kullanılan yöntemdir. Başına @ ifadesi yazarak kullanırız.
+
+> * Foreach döngüsünün 4 tane parametresi vardır.
+> 	* Değişkenin türü. var
+>	* Değişkenin verilen isim. item
+> 	* in komutu. in
+>	* Değerlerin alınacağı dizinin ismi. Model
+>		* @foreach(var item in Model) 
+	
+
+
+
+
+
 
 
 
