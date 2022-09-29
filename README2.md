@@ -43,6 +43,10 @@
 > * Validation Result tanımlarken **Fluent Validation** Framework ü yüklenmelidir.
 	
 > * @using(Html.BeginForm())-----> Ekleme ve güncelleme işlemleri sırasında kullanılan bir HTML yardımcısıdır.
+	
+> * Tema UI katmanına eklenir.
+	
+> * RenderBody() -----> Layout a bağlı olarak çalışacak sayfaların, sayfanın hangi konumunda yer alacağını tutuyor.
 
 
 
