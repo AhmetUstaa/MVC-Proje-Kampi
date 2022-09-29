@@ -40,6 +40,8 @@
 > * Validation Rules ları Entity Layer Category içerisinde tanımlamak yerine Business Layer Validation Rules klasörü oluşturup burada class lar ile tanımlamak daha doğru bir yöntemdir. Bunun için öncelikle ilgili katmana Fluent Validation Framework yüklenir.
 > * Entity Layer Concrete klasörü içerisindeki her bir class için ayrı ayrı validator class ları oluşturulup içerisine constructor lar ile kurallar tanımlanır.
 
+> * Validation Result tanımlarken **Fluent Validation** Framework ü yüklenmelidir.
+
 
 
 
