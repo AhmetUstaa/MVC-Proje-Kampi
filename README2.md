@@ -41,6 +41,8 @@
 > * Entity Layer Concrete klasörü içerisindeki her bir class için ayrı ayrı validator class ları oluşturulup içerisine constructor lar ile kurallar tanımlanır.
 
 > * Validation Result tanımlarken **Fluent Validation** Framework ü yüklenmelidir.
+	
+> * @using(Html.BeginForm())-----> Ekleme ve güncelleme işlemleri sırasında kullanılan bir HTML yardımcısıdır.
 
 
 
