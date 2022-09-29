@@ -30,6 +30,14 @@
 > * Böylelikle sayfa yüklendiği zaman ilgili action için get attribute ü devreye girecek ve kullanıcı eğer o sayfada bir butona tıklarsa o zamanda ilgili diğer action ile post attribute ü devreye girer. Son olarakta sayfa yüklenir yüklenmez veri kaydetme işlemi olmayacak. 
 
 > * form class diyip belirledikten sonra **method="post"** yazdığımızda şu demek oluyor form tag i içerisinde yazan ifadeler ne zaman çalışsın? Sayfada bir post işlemi olduğu zaman çalışsın.
+	
+> * IIS EXPRESS HATASI -----> http://localhost:34111 başka bir uygulama tarafından kullanılıyor gibi bir hata alırsanız komut istemini açın ve şu iki komutu sırayla yazın tekrar deneyin. **net stop winnat** , **net start winnat**
+	
+> * Visual Studio da kod satırlarını düzenlemek için CTRL + K + D kullanılır.
+
+> * Business Layer da olabildiğince new kullanmaktan kaçınarak bağımlılıkları minimize etmek gerekir.
+
+
 
 
 

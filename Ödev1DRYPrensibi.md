@@ -1,6 +1,6 @@
 	----------------------
 
-# Ödev 1 ---> DRY prensibi nedir?
+# Ödev 1 ---> DRY Prensibi
 
 > * DRY (Don’t Repeat Yourself), yazılım kalıplarının tekrarlanmasını (code duplication) ve buna bağlı olarak ortaya çıkabilecek fazlalıkların ve karmaşanın önlenmesini amaçlayan bir yazılım geliştirme ilkesidir. DRY prensibi, "Her bilginin bir sistem içinde tek, kesin ve yetkili bir temsili ile var olması" gerektiğini vurgular.
 > * DRY Prensibinin Avantajları;
