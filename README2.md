@@ -32,6 +32,10 @@
 > * form class diyip belirledikten sonra **method="post"** yazdığımızda şu demek oluyor form tag i içerisinde yazan ifadeler ne zaman çalışsın? Sayfada bir post işlemi olduğu zaman çalışsın.
 	
 > * IIS EXPRESS HATASI -----> http://localhost:34111 başka bir uygulama tarafından kullanılıyor gibi bir hata alırsanız komut istemini açın ve şu iki komutu sırayla yazın tekrar deneyin. **net stop winnat** , **net start winnat**
+	
+> * Visual Studio da kod satırlarını düzenlemek için CTRL + K + D kullanılır.
+
+> *
 
 
 
