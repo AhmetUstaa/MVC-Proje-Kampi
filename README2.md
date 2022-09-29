@@ -35,7 +35,9 @@
 	
 > * Visual Studio da kod satırlarını düzenlemek için CTRL + K + D kullanılır.
 
-> *
+> * Business Layer da olabildiğince new kullanmaktan kaçınarak bağımlılıkları minimize etmek gerekir.
+
+
 
 
 
