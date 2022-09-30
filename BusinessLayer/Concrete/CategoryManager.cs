@@ -14,20 +14,25 @@ namespace BusinessLayer.Concrete
     public class CategoryManager : ICategoryService
 
     {
-        ICategoryDal _categordal;
+        ICategoryDal _categorDal;
         public CategoryManager(ICategoryDal categordal)
         {
-            _categordal = categordal;
+            _categorDal = categordal;
         }
 
         public void CategoryAdd(Category category)
         {
-            _categordal.Insert(category);
+            _categorDal.Insert(category);
+        }
+
+        public Category GetByID(int id)
+        {
+            return _categorDal.Get(x => x.CategoryID == id);
         }
 
         public List<Category> GetList()
         {
-            return _categordal.List();
+            return _categorDal.List();
         }
 
     }
