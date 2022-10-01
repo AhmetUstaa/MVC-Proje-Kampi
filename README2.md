@@ -51,7 +51,7 @@
 > * **EntityState** metotları *added*, *deleted*, *detached*, *modified*, *unchanged*. //_object.Add(p); e ihtiyaç kalmıyor.
 	
 > * Yapılan değiklikleri database e aktarmak için migration yapılır. 
-> * *add-migration mig_writer_edit*
+> * *add-migration mig_writer_edit* *update-database
 > * Çıkan edit class ında **public override void Up()** yapılan değişiklikleri, down ise değişiklik öncesi halini verir.
 
 
