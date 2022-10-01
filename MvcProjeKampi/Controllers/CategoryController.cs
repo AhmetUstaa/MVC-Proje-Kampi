@@ -38,13 +38,13 @@ namespace MvcProjeKampi.Controllers
         {
             //cm.CategoryAddBL(p);
             CategoryValidatior categoryValidatior = new CategoryValidatior();
-            ValidationResult results =categoryValidatior.Validate(p);
-            if (results.IsValid) 
+            ValidationResult results = categoryValidatior.Validate(p);
+            if (results.IsValid)
             {
                 cm.CategoryAdd(p);
                 return RedirectToAction("GetCategoryList");
             }
-            else 
+            else
             {
                 foreach (var item in results.Errors)
                 {
@@ -52,7 +52,7 @@ namespace MvcProjeKampi.Controllers
                 }
             }
             return View();
-            return RedirectToAction("GetCategoryList");
+            _ = RedirectToAction("GetCategoryList");
         }
     }
 
