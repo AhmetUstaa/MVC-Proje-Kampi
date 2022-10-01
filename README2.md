@@ -49,6 +49,10 @@
 > * RenderBody() -----> Layout a bağlı olarak çalışacak sayfaların, sayfanın hangi konumunda yer alacağını tutuyor. Kullanılmadığında RenderBody hatası alınıyor. Ve herhangi bir yerde kullanabiliyoruz.
 	
 > * **EntityState** metotları *added*, *deleted*, *detached*, *modified*, *unchanged*. //_object.Add(p); e ihtiyaç kalmıyor.
+	
+> * Yapılan değiklikleri database e aktarmak için migration yapılır. 
+> * *add-migration mig_writer_edit*
+> * Çıkan edit class ında **public override void Up()** yapılan değişiklikleri, down ise değişiklik öncesi halini verir.
 
 
 
