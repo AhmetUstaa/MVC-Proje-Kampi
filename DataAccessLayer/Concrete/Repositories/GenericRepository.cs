@@ -4,17 +4,18 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete.Repositories
 {
-    public class Generic_Reporsitory<T> : IRepository<T> where T : class
+    public class GenericRepository<T> : IRepository<T> where T : class
     {
         Context c = new Context();
         DbSet<T> _object;
 
-        public Generic_Reporsitory()
+        public GenericRepository()
         {
             _object = c.Set<T>();
         }
