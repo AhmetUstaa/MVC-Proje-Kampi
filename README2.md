@@ -47,6 +47,8 @@
 > * Tema UI katmanına eklenir.
 	
 > * RenderBody() -----> Layout a bağlı olarak çalışacak sayfaların, sayfanın hangi konumunda yer alacağını tutuyor. Kullanılmadığında RenderBody hatası alınıyor. Ve herhangi bir yerde kullanabiliyoruz.
+	
+> * **EntityState** metotları *added*, *deleted*, *detached*, *modified*, *unchanged*. //_object.Add(p); e ihtiyaç kalmıyor.
 
 
 
