@@ -52,7 +52,6 @@ namespace MvcProjeKampi.Controllers
                 }
             }
             return View();
-            _ = RedirectToAction("GetCategoryList");
         }
     }
 

@@ -11,15 +11,23 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int WriterID { get; set; }
+
         [StringLength(50)]
         public String WriterName { get; set; }
+
         [StringLength(50)]
         public String WriterSurName { get; set; }
+
         [StringLength(100)]
         public String WriterImage { get; set; }
-        [StringLength(50)]
+
+        [StringLength(200)]
+        public string WriterAbout { get; set; }
+
+        [StringLength(200)]
         public String WriterMail { get; set; }
-        [StringLength(20)]
+
+        [StringLength(200)]
         public String WriterPassword { get; set; }
 
         public ICollection<Heading> Headings { get; set; }
