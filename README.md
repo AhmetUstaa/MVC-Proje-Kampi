@@ -6,4 +6,4 @@
 
 > Eğitim Tarihi --------> 19/09/2022
 
-> [EĞİTİM SIRASINDA ALINAN NOTLAR İÇİN LÜTFEN TIKLAYINIZ.](https://github.com/AhmetUstaa/MVC-Proje-Kampi/tree/master/README)
+> [EĞİTİM SIRASINDA ALINAN NOTLARI İNCELEMEK İÇİN LÜTFEN TIKLAYINIZ.](https://github.com/AhmetUstaa/MVC-Proje-Kampi/tree/master/README)
