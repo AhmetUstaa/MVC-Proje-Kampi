@@ -30,6 +30,9 @@ namespace EntityLayer.Concrete
         [StringLength(200)]
         public String WriterPassword { get; set; }
 
+        [StringLength(50)]
+        public String WriterTitle { get; set; }
+
         public ICollection<Heading> Headings { get; set; }
         public ICollection<Content> Contents { get; set; }
 
